@@ -1,0 +1,50 @@
+.instagram-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px; /* Adjust width as needed */
+  height: 320px; /* Set height equal to width to make it square */
+  max-width: 90vw;
+  background-color: #ffffff; /* Changed background color to white */
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-popup img {
+  width: 100px; /* Adjust image size as needed */
+  height: 100px; /* Ensure consistent aspect ratio */
+  margin-bottom: 20px;
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.instagram-popup .popup-text {
+  color: #555555; /* Darkened text color for better contrast */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px; /* Increased font size */
+  font-family: "Nunito";
+}
+
+.instagram-popup .popup-button {
+  background-color: #34495E; /* Green button */
+  color: white;
+  padding: 12px 24px; /* Increased padding for better touch targets */
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  font-size: 16px; /* Increased font size */
+  font-family: "Nunito";
+}
+
+.instagram-popup .popup-button:hover {
+  background-color: #34495E; /* Darker green on hover */
+}

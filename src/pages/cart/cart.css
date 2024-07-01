@@ -1,0 +1,111 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.cartItem {
+  width: 90%; /* Adjusted width for better responsiveness */
+  max-width: 700px; /* Added maximum width for larger screens */
+  height: auto; /* Adjusted height to fit content */
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 20px 0; /* Adjusted margin for better spacing */
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.cartItem img {
+  width: 200px;
+  height: auto; /* Added height auto for responsiveness */
+  border-radius: 10px; /* Added border-radius to images */
+  margin-right: 20px; /* Adjusted margin for better spacing */
+}
+
+.cartItem .description {
+  flex: 1; /* Expanded to fill available space */
+  font-size: 24px; /* Reduced font size for better readability */
+}
+
+.countHandler input {
+  width: 60px; /* Adjusted width for better input size */
+  padding: 8px; /* Adjusted padding for better input size */
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px; /* Adjusted font size for better consistency */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px; /* Adjusted margin for better spacing */
+}
+
+.checkout {
+  margin-top: 20px; /* Added margin-top for better spacing */
+  text-align: center;
+}
+
+.checkout button {
+  width: 200px; /* Adjusted width for better button size */
+  height: 50px;
+  background-color: #34495E;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px; /* Adjusted font size for better consistency */
+}
+
+.checkout button:hover {
+  background-color: #0056b3;
+}
+
+/* Add these styles to your cart.css file */
+.input-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #34495E;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.countHandler button {
+  background-color: #34495E;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px; /* Added padding for better button size */
+}
+
+.countHandler button:hover {
+  background-color: #0056b3;
+}
+
+.countHandler button:focus {
+  outline: none; /* Removed default focus outline */
+}

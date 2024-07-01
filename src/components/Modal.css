@@ -1,0 +1,70 @@
+/* Modal.css */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Darkened backdrop for focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 15px; /* Increased border radius for a softer look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjusted box shadow for depth */
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%; /* Adjusted width for better responsiveness */
+  position: relative;
+  animation: modalAppear 0.3s ease-out forwards;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555; /* Adjusted close button color */
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  object-fit: cover; /* Ensured image maintains aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+}
+
+.modal-info {
+  text-align: center;
+}
+
+.modal-info h3, .modal-info p {
+  margin-bottom: 1rem; /* Increased margin for better spacing */
+  color: #333; /* Adjusted text color */
+}

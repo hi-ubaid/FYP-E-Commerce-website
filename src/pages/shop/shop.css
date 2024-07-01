@@ -1,0 +1,128 @@
+.shopTitle {
+  margin-top: 50px; /* Adjusted margin-top for better alignment */
+  text-align: center;
+  font-size: 36px; /* Slightly reduced font size */
+  color: #333; /* Darkened the text color */
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted grid columns for better responsiveness */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* Changed background color to white */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added box-shadow transition */
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added image shadow */
+}
+
+.product .description {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #555; /* Adjusted description text color */
+}
+
+.addToCartBttn {
+  background-color: #333; /* Changed button background color to dark gray */
+  color: #fff; /* Changed button text color to white */
+  border: none;
+  min-width: 120px; /* Increased button width for better readability */
+  padding: 10px 20px; /* Increased button padding for better touch target */
+  border-radius: 25px; /* Increased button border-radius for a rounded look */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.addToCartBttn:hover {
+  background-color: #222; /* Darkened button color on hover */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #34495E; /* Light blue color */
+  color: #fff;
+  border: 1px solid #34495E; /* Match background color for a seamless look */
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  border-radius: 50%; /* Added border-radius to make them circular */
+}
+
+.pagination button:hover {
+  background-color: #f6931c; /* Darker blue color on hover */
+  border-color: #f6931c; /* Darker border color on hover */
+}
+
+.pagination button.active {
+  background-color: #34495E; /* Darker blue color for active button */
+  border-color: #34495E; /* Darker border color for active button */
+}
+
+.search-filter {
+  margin-bottom: 20px; /* Added margin bottom to create space between search bar and price filter */
+}
+
+.price-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px; /* Added padding for better spacing */
+}
+
+.price-filter input {
+  flex: 1;
+  max-width: 110px; /* Adjusted max-width for smaller width */
+  padding: 8px; /* Reduced padding for smaller input size */
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px; /* Optionally reduced font size for smaller input */
+  margin-right: 5px; /* Reduced margin for tighter spacing */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.price-filter input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.price-filter button {
+  padding: 12px 20px;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.price-filter button:hover {
+  background-color: #2c3a4e;
+}

@@ -1,0 +1,66 @@
+/* App.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.loginForm {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px; /* Increased border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 300px;
+  margin-right: 20px; /* Adjusted margin to create a gap */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: Nunito;
+  font-size: 18px; /* Increased font size for better readability */
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.textInput {
+  width: 100%;
+  padding: 12px; /* Increased padding for better input area */
+  margin-top: 5px;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Slightly increased border radius for smoother edges */
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #6200ee; /* Purple button color */
+  color: white;
+  padding: 12px 24px; /* Increased padding for better button size */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out; /* Added transition for smoother hover effect */
+}
+
+.button:hover {
+  background-color: #3700b3; /* Darker purple color on hover */
+}
+
+h1 {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}

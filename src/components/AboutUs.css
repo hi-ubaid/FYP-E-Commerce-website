@@ -1,0 +1,81 @@
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Nunito";
+}
+
+h1, h2 {
+  color: #333;
+  font-family: "Nunito";
+  text-align: center;
+}
+
+.mission-section, .values-section, .community-section, .sustainability-section {
+  margin-bottom: 30px;
+  font-family: "Nunito";
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.mission-section p, .values-section p, .community-section p, .sustainability-section p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  align-content: justify;
+}
+
+.counter-section h2 {
+  color:green;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.counter-item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.counter-item h3 {
+  font-size: 36px;
+  color:orange;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.counter-item p {
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 10px;
+  }
+
+  .mission-section, .values-section, .community-section, .sustainability-section {
+    text-align: left;
+  }
+
+  .counter-section h2 {
+    font-size: 24px;
+  }
+
+  .counter-item {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .counter-item h3 {
+    font-size: 32px;
+  }
+}

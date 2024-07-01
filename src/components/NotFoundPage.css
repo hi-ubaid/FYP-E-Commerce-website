@@ -1,0 +1,39 @@
+/* not-found.css */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f8f9fa; /* Lighter background color for better contrast */
+  color: #333; /* Dark text color for readability */
+}
+
+.not-found-container h1 {
+  font-family: "Nunito";
+  font-size: 4em; /* Slightly reduced font size for better proportion */
+  margin: 0;
+}
+
+.not-found-container p {
+  font-family: "Nunito";
+  font-size: 1.2em; /* Slightly reduced font size for better proportion */
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.not-found-container a {
+  font-family: "Nunito";
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #34495E; /* Primary button color, adjust based on your app's theme */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s; /* Added transition for smoother hover effect */
+}
+
+.not-found-container a:hover {
+  background-color: #0056b3; /* Button hover state color, adjust based on your app's theme */
+}
